@@ -1,0 +1,10 @@
+<resources>
+
+
+    <string name="app_name">Tucu Sports</string>
+    <string name="Titulo">Tucu Sports</string>
+    <string name="Subtitulo">by Gachi</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="tit_crea">TucuSports</string>
+    <string name="action_settings">Settings</string>
+</resources>

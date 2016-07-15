@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Podés buscar por dirección para averiguar que complejos tenés cerca. También podes ver la informacion detallada del lugar ingresando en la descripcion del marcador. Si no sabés como llegar tenés la opcion de buscar el camino mas rápido por Google Maps, ingresando al icono de abajo a la derecha. Te recomiendo tener activado el GPS en alta precision y conectado a WiFi para una geolocalizacion mas rapida"
+        android:id="@+id/txtInstrucciones"
+        android:singleLine="false"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Version 1.0 Beta"
+        android:id="@+id/txtVersion"
+        android:layout_gravity="center_horizontal|left"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtInstrucciones"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/txtVersion"
+        android:layout_alignRight="@+id/txtInstrucciones"
+        android:layout_alignEnd="@+id/txtInstrucciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

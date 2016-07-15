@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/degradado">
+
+    <include layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/txtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="false"
+        android:textSize="15dp"
+        android:height="50dp"
+        android:autoText="false"
+        android:focusable="false"
+        android:ems="10"
+        android:elevation="5dp"
+        android:editable="false"
+        android:layout_below="@+id/btnCopiarContacto"
+        android:layout_alignLeft="@+id/labelDireccion"
+        android:layout_alignStart="@+id/labelDireccion"
+        android:layout_marginRight="10dp">
+    </EditText>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnMensaje"
+        android:elevation="15dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/stat_notify_chat"
+        android:nestedScrollingEnabled="false"
+        android:onClick="mensajeContacto"
+        android:layout_below="@+id/txtTel"
+        android:layout_alignRight="@+id/labelContacto"
+        android:layout_alignEnd="@+id/labelContacto" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLlamar"
+        android:elevation="15dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="right"
+        android:src="@android:drawable/sym_action_call"
+        android:onClick="llamarContacto"
+        android:layout_alignTop="@+id/btnMensaje"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número para turnos"
+        android:id="@+id/labelContacto"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:id="@+id/labelDireccion"
+        android:textSize="25dp"
+        android:layout_below="@+id/btnMensaje"
+        android:layout_alignLeft="@+id/labelContacto"
+        android:layout_alignStart="@+id/labelContacto"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/txtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="true"
+        android:textSize="15dp"
+        android:height="80dp"
+        android:autoText="false"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/labelDireccion"
+        android:layout_alignLeft="@+id/labelDireccion"
+        android:layout_alignStart="@+id/labelDireccion"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:ems="10"
+        android:elevation="5dp"
+        android:editable="false"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnCopiarContacto"
+        android:elevation="15dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:nestedScrollingEnabled="false"
+        android:onClick="copiarNumero"
+        android:layout_alignTop="@+id/labelContacto"
+        android:layout_alignRight="@+id/txtTel"
+        android:layout_alignEnd="@+id/txtTel" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnCopiarDireccion"
+        android:elevation="15dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:nestedScrollingEnabled="false"
+        android:onClick="copiarDireccion"
+        android:layout_alignTop="@+id/labelDireccion"
+        android:layout_alignRight="@+id/txtDireccion"
+        android:layout_alignEnd="@+id/txtDireccion"
+        android:layout_alignParentEnd="false" />
+
+    <EditText
+        android:id="@+id/txtDeportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:phoneNumber="false"
+        android:textSize="15dp"
+        android:height="50dp"
+        android:autoText="false"
+        android:focusable="false"
+        android:ems="10"
+        android:elevation="5dp"
+        android:editable="false"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/labelDeportes"
+        android:layout_alignLeft="@+id/labelDeportes"
+        android:layout_alignStart="@+id/txtDireccion"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalles"
+        android:id="@+id/labelDeportes"
+        android:textSize="25dp"
+        android:layout_below="@+id/txtDireccion"
+        android:layout_alignLeft="@+id/labelDireccion"
+        android:layout_alignStart="@+id/labelDireccion"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

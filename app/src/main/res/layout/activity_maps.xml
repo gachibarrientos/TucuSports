@@ -1,0 +1,88 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MapsActivity"
+    android:background="@drawable/degradado">
+
+<fragment
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_below="@+id/txtBuscar" />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnMiubicacion"
+        android:elevation="30dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:nestedScrollingEnabled="false"
+        android:onClick="iramiUbicacion"
+        android:focusableInTouchMode="true"
+        android:layout_alignTop="@+id/map"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBuscar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/btnBuscar"
+        android:hint="    Ingresa una dirección.."
+        android:layout_toLeftOf="@+id/btnBuscar"
+        android:layout_toStartOf="@+id/btnBuscar"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnBuscar"
+        android:elevation="30dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:nestedScrollingEnabled="false"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnInstrucciones"
+        android:elevation="30dp"
+        android:background="@drawable/ovalo"
+        android:layout_gravity="center_horizontal"
+        android:src="@android:drawable/ic_menu_help"
+        android:nestedScrollingEnabled="false"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnTipoMapa"
+        android:background="@drawable/ovalo"
+        android:elevation="30dp"
+        android:src="@android:drawable/stat_notify_sync"
+        android:layout_alignTop="@+id/btnMiubicacion"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+</RelativeLayout>
